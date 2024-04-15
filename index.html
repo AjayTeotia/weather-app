@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="/img/logo-icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="enter your location...">
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+
+            <div class="weather">
+                <img src="/img/cloud.png" class="weather-icon" alt="">
+                <p class="temp">0<span>°C</span></p>
+                <p class="decription"></p>                
+            </div>
+
+            <div class="line"></div>
+
+            <div class="details">
+                <div class="city"></div>
+            </div>
+            
+        </div>
+
+        <div class="right-hand-data">
+            
+            <div class="title">Todya</div>
+
+            <div class="cards-container">
+
+                <div class="card">
+                    <div class="card-title">Country:</div>
+                    <div class="card-info country"></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Wind</div>
+                    <div class="card-info wind">0 Km/h</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title ">Humadity</div>
+                    <div class="card-info humidity">0%</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Feel likes</div>
+                    <div class="card-info feel_likes">0<span>°C</span></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Pressure</div>
+                    <div class="card-info pressure">0 Pa </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Temperature History</div>
+                    <div class="card-info">
+                        <i class="fa-solid fa-up-long "></i>
+                        <span class="temp-max">0<span>°C</span></span>
+                        <br>
+                        <i class="fa-solid fa-down-long "></i>
+                        <span class="temp-min">0<span>°C</span></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
